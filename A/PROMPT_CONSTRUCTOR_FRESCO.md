@@ -11,7 +11,7 @@ ACTOR_LOCAL_PATH=C:/Franco_VitaDelta/work-claude-a
 
 BRIDGE_REPO=francogg89-ai/error111
 BRIDGE_PATH=A/CONSTITUCION_INICIAL.md
-BRIDGE_SHA=f2a67fe52ce39007f852dc065d1fa90aceca64ff
+BRIDGE_SHA=<BRIDGE_SHA_DEL_LOCATOR>
 RAMA=main
 
 METODO_REPO=francogg89-ai/metodo-operativo-ia

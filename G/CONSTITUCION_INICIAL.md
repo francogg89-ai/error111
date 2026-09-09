@@ -35,17 +35,19 @@ El AUDITOR inicial lee esta constitución en el SHA indicado por auditor-init/v1
 G/PROMPT_AUDITOR_FRESCO.md
 G/PROMPT_CONSTRUCTOR_FRESCO.md
 
-Ejecuta PROMPT_AUDITOR_FRESCO.md. Publica la auditoría de handoff prevista. Si queda conforme, emite el primer sobre con turn_id=1 hacia CONSTRUCTOR fresh y materializa PROMPT_CONSTRUCTOR_FRESCO.md sustituyendo <INCOMING_TURN_ID> por 1 y <AUDIT_SHA_POST_HANDOFF> por el SHA exacto recién publicado.
+Ejecuta PROMPT_AUDITOR_FRESCO.md. La auditoría de handoff ya fue publicada en audit-chatgpt-g @ b020b604dc0bdb9ac4bc40e4c974712b7aaa62e0. La rederiva y verifica sin publicar otra auditoría. Si queda conforme, emite el primer sobre con turn_id=1 hacia CONSTRUCTOR fresh y materializa PROMPT_CONSTRUCTOR_FRESCO.md sustituyendo <INCOMING_TURN_ID> por 1, <AUDIT_SHA_POST_HANDOFF> por b020b604dc0bdb9ac4bc40e4c974712b7aaa62e0 y <BRIDGE_SHA_DEL_LOCATOR> por el CONSTITUTION_SHA recibido literalmente en auditor-init/v1.
 
 ## Contrato permanente de salida mínima
 
-Cada intervención responde exclusivamente con un único bloque json válido y nada antes ni después. El objeto contiene exactamente los campos de revolutions-hop/v1.
+Cada intervención responde exclusivamente con un único bloque cercado etiquetado json y nada antes ni después. Dentro del bloque existe un único objeto JSON válido con exactamente los campos de revolutions-hop/v1. Las llaves sin bloque cercado no cumplen la forma de transporte.
 
 Cuando continúa el loop, next_prompt contiene sólo cabecera mínima, cortes Git exactos, SHA/path relevante, próxima acción irreducible, comprobaciones, prohibiciones y condición de terminación. No incluye saludo, narrativa, resultados ya preservados ni conclusiones rederivables desde Git.
 
 INCOMING_TURN_ID dentro de next_prompt es exactamente el turn_id del sobre que lo transporta. El receptor emite turn_id=INCOMING_TURN_ID+1.
 
-Todo next_prompt incluye también BRIDGE_REPO, BRIDGE_PATH y BRIDGE_SHA con las coordenadas congeladas de esta capa de compatibilidad. Un actor fresh debe leerlas antes de actuar; un actor current puede revalidarlas. Estas coordenadas no sustituyen los cortes WORK_SHA y AUDIT_SHA.
+El AUDITOR inicial toma CONSTITUTION_SHA_RECIBIDO literalmente del locator auditor-init/v1. Al materializar el primer prompt del CONSTRUCTOR sustituye <BRIDGE_SHA_DEL_LOCATOR> por CONSTITUTION_SHA_RECIBIDO. El placeholder nunca llega al receptor.
+
+Desde ese primer salto, todo next_prompt conserva BRIDGE_REPO, BRIDGE_PATH y el BRIDGE_SHA concreto recibido. Un actor fresh debe leerlos antes de actuar; un actor current puede revalidarlos. Estas coordenadas no sustituyen WORK_SHA ni AUDIT_SHA.
 
 El CONSTRUCTOR siempre vuelve al AUDITOR. Sólo el AUDITOR decide veredictos, continuidad, finalización, relevo y necesidad humana. next_instance es current salvo relevo decidido durablemente conforme al método técnico viejo.
 

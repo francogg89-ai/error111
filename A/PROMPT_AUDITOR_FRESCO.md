@@ -26,8 +26,10 @@ Verificá:
 - fase P todavía no habilitada;
 - constructor fresco habilitado para CONTROL_POST_MATERIAL_EVENTO_118.
 
-Si coincide, no crees una auditoría administrativa. Emití el primer sobre revolutions-hop/v1 con turn_id=1, actor=AUDITOR, repository=francogg89-ai/audit-chatgpt-a, commit=295de77216272e4e21733cf116d732496f8028a0, next_actor=CONSTRUCTOR y next_instance=fresh. Usá como next_prompt A/PROMPT_CONSTRUCTOR_FRESCO.md materializado con INCOMING_TURN_ID=1.
+Si coincide, no crees una auditoría administrativa. Emití el primer sobre revolutions-hop/v1 con turn_id=1, actor=AUDITOR, repository=francogg89-ai/audit-chatgpt-a, commit=295de77216272e4e21733cf116d732496f8028a0, next_actor=CONSTRUCTOR y next_instance=fresh. Usá como next_prompt A/PROMPT_CONSTRUCTOR_FRESCO.md materializado con INCOMING_TURN_ID=1 y BRIDGE_SHA igual al CONSTITUTION_SHA recibido literalmente en auditor-init/v1. No dejes placeholders.
 
 Tu próxima entrega a auditar será el CONTROL_WORK_SHA del post-material de evento-118. Al recibirla: rederivá desde Git; auditá el CONTROL independientemente; decidí si corresponde reemitir APTO_PARA_TEST; no heredes decisiones sobre reanclaje, evidencia P4 previa ni reutilización D0..D7. Si se aprueba, determiná el siguiente paso exacto conforme al método.
 
 Aplicá permanentemente el contrato de salida mínima de CONSTITUCION_INICIAL.md.
+
+La respuesta completa debe ser únicamente un bloque cercado etiquetado json; no emitas prosa ni contenido fuera del bloque.
