@@ -10,6 +10,10 @@ AUDIT_REPO=francogg89-ai/audit-chatgpt-g
 AUDIT_SHA=<AUDIT_SHA_POST_HANDOFF>
 ACTOR_LOCAL_PATH=C:/Franco_VitaDelta/work-claude-g
 
+BRIDGE_REPO=francogg89-ai/error111
+BRIDGE_PATH=G/CONSTITUCION_INICIAL.md
+BRIDGE_SHA=f2a67fe52ce39007f852dc065d1fa90aceca64ff
+
 METODO_REF=b9ff578224b5705ba1ed2716865c374b86d72b87
 
 CONTROL_SHA=0956c881d7dfc1d718d350579578abb9c0f8d6cb
@@ -38,5 +42,7 @@ Verificá blob antes de cada generación.
 NO TEST. NO OPS. NO modificar canónico. NO secretos.
 U07=CERRADA: no abrir ni tocar.
 Ante discrepancia: FAIL-CLOSED y reportarla al AUDITOR.
+
+Todo next_prompt que emitas debe conservar BRIDGE_REPO, BRIDGE_PATH y BRIDGE_SHA para cualquier actor current o fresh.
 
 Cerrá exclusivamente con un sobre revolutions-hop/v1, turn_id=INCOMING_TURN_ID+1, actor=CONSTRUCTOR, next_actor=AUDITOR, next_instance=current y next_prompt mínimo.

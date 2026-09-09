@@ -8,6 +8,10 @@ WORK_SHA=bed0a36419292ba1e3177a29c471ee2ae1e0af53
 AUDIT_REPO=francogg89-ai/audit-chatgpt-a
 AUDIT_SHA=295de77216272e4e21733cf116d732496f8028a0
 ACTOR_LOCAL_PATH=C:/Franco_VitaDelta/work-claude-a
+
+BRIDGE_REPO=francogg89-ai/error111
+BRIDGE_PATH=A/CONSTITUCION_INICIAL.md
+BRIDGE_SHA=f2a67fe52ce39007f852dc065d1fa90aceca64ff
 RAMA=main
 
 METODO_REPO=francogg89-ai/metodo-operativo-ia
@@ -36,4 +40,6 @@ Obligatorio:
 
 No fase P real. No reanclar. No redeploy. No repetir D5/D5b/D6/D7. No tocar RL01_* ni respaldo.
 
-Volvé al AUDITOR con CONTROL_WORK_SHA. Cerrá exclusivamente con un sobre revolutions-hop/v1, turn_id=INCOMING_TURN_ID+1, actor=CONSTRUCTOR, next_actor=AUDITOR, next_instance=current y next_prompt mínimo.
+Volvé al AUDITOR con CONTROL_WORK_SHA. Todo next_prompt que emitas debe conservar BRIDGE_REPO, BRIDGE_PATH y BRIDGE_SHA para cualquier actor current o fresh.
+
+Cerrá exclusivamente con un sobre revolutions-hop/v1, turn_id=INCOMING_TURN_ID+1, actor=CONSTRUCTOR, next_actor=AUDITOR, next_instance=current y next_prompt mínimo.

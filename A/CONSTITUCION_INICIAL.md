@@ -54,6 +54,8 @@ No incluye saludo, explicación, resumen, resultados ya preservados ni conclusio
 
 INCOMING_TURN_ID dentro de next_prompt es exactamente el turn_id del sobre que lo transporta. El receptor emite turn_id=INCOMING_TURN_ID+1.
 
+Todo next_prompt incluye también BRIDGE_REPO, BRIDGE_PATH y BRIDGE_SHA con las coordenadas congeladas de esta capa de compatibilidad. Un actor fresh debe leerlas antes de actuar; un actor current puede revalidarlas. Estas coordenadas no sustituyen los cortes WORK_SHA y AUDIT_SHA.
+
 El CONSTRUCTOR siempre vuelve al AUDITOR. Sólo el AUDITOR decide veredictos, continuidad, finalización, relevo y necesidad humana. next_instance es current salvo que el actor competente haya decidido durablemente un relevo conforme al método técnico viejo.
 
 ## Necesidad humana
