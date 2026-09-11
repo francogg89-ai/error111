@@ -1,0 +1,351 @@
+{
+  "requests": [
+    {
+      "id": 1,
+      "at": "2026-09-11T01:11:08.613209+00:00",
+      "kind": "marker",
+      "method": "",
+      "path_ok": false,
+      "status": 0,
+      "rpc": "",
+      "host": "",
+      "origin": "",
+      "user_agent": "",
+      "note": "check-publico-inicio"
+    },
+    {
+      "id": 2,
+      "at": "2026-09-11T01:11:09.788819+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "server/discover",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "python-httpx2/2.12.0",
+      "note": ""
+    },
+    {
+      "id": 3,
+      "at": "2026-09-11T01:11:09.852533+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "tools/list",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "python-httpx2/2.12.0",
+      "note": ""
+    },
+    {
+      "id": 4,
+      "at": "2026-09-11T01:11:17.373581+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": false,
+      "status": 404,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "sonda-check",
+      "note": ""
+    },
+    {
+      "id": 5,
+      "at": "2026-09-11T01:11:17.441308+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": false,
+      "status": 404,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "sonda-check",
+      "note": ""
+    },
+    {
+      "id": 6,
+      "at": "2026-09-11T01:11:17.460827+00:00",
+      "kind": "marker",
+      "method": "",
+      "path_ok": false,
+      "status": 0,
+      "rpc": "",
+      "host": "",
+      "origin": "",
+      "user_agent": "",
+      "note": "check-publico-ok"
+    },
+    {
+      "id": 7,
+      "at": "2026-09-11T01:11:55.119947+00:00",
+      "kind": "marker",
+      "method": "",
+      "path_ok": false,
+      "status": 0,
+      "rpc": "",
+      "host": "",
+      "origin": "",
+      "user_agent": "",
+      "note": "inicio-chatgpt"
+    },
+    {
+      "id": 8,
+      "at": "2026-09-11T01:18:28.392235+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "server/discover",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 9,
+      "at": "2026-09-11T01:18:28.466588+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "tools/list",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 10,
+      "at": "2026-09-11T01:23:08.684706+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "tools/call",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0 (Codex)",
+      "note": ""
+    },
+    {
+      "id": 11,
+      "at": "2026-09-11T01:24:12.850859+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "tools/call",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0 (Codex)",
+      "note": ""
+    },
+    {
+      "id": 12,
+      "at": "2026-09-11T01:25:28.843271+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "tools/call",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0 (Codex)",
+      "note": ""
+    },
+    {
+      "id": 13,
+      "at": "2026-09-11T01:25:29.056460+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "tools/call",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0 (Codex)",
+      "note": ""
+    },
+    {
+      "id": 14,
+      "at": "2026-09-11T01:26:25.302927+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": true,
+      "status": 200,
+      "rpc": "tools/call",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0 (Codex)",
+      "note": ""
+    },
+    {
+      "id": 15,
+      "at": "2026-09-11T01:27:19.079601+00:00",
+      "kind": "marker",
+      "method": "",
+      "path_ok": false,
+      "status": 0,
+      "rpc": "",
+      "host": "",
+      "origin": "",
+      "user_agent": "",
+      "note": "inicio-intento-capacidad-invalida"
+    },
+    {
+      "id": 16,
+      "at": "2026-09-11T01:28:48.740952+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": false,
+      "status": 404,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 17,
+      "at": "2026-09-11T01:28:48.838175+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": false,
+      "status": 404,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 18,
+      "at": "2026-09-11T01:28:48.935808+00:00",
+      "kind": "http",
+      "method": "GET",
+      "path_ok": false,
+      "status": 405,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 19,
+      "at": "2026-09-11T01:29:58.628710+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": false,
+      "status": 404,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 20,
+      "at": "2026-09-11T01:29:58.699696+00:00",
+      "kind": "http",
+      "method": "POST",
+      "path_ok": false,
+      "status": 404,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 21,
+      "at": "2026-09-11T01:29:58.774960+00:00",
+      "kind": "http",
+      "method": "GET",
+      "path_ok": false,
+      "status": 405,
+      "rpc": "",
+      "host": "commission-blond-powell-preliminary.trycloudflare.com",
+      "origin": "",
+      "user_agent": "openai-mcp/1.0.0",
+      "note": ""
+    },
+    {
+      "id": 22,
+      "at": "2026-09-11T01:30:45.757588+00:00",
+      "kind": "marker",
+      "method": "",
+      "path_ok": false,
+      "status": 0,
+      "rpc": "",
+      "host": "",
+      "origin": "",
+      "user_agent": "",
+      "note": "fin"
+    }
+  ],
+  "calls": [
+    {
+      "id": 1,
+      "tool": "list_proposals",
+      "arguments": {
+        "cursor": null,
+        "limit": 100
+      },
+      "ok": true,
+      "at": "2026-09-11T01:23:08.678917+00:00"
+    },
+    {
+      "id": 2,
+      "tool": "get_proposal",
+      "arguments": {
+        "proposal_id": "P-042"
+      },
+      "ok": true,
+      "at": "2026-09-11T01:24:12.844242+00:00"
+    },
+    {
+      "id": 3,
+      "tool": "save_evaluation",
+      "arguments": {
+        "doubts": "ninguna",
+        "proposal_id": "P-042",
+        "reasons": "prueba real C1.3",
+        "result": "duda"
+      },
+      "ok": true,
+      "at": "2026-09-11T01:25:28.838752+00:00"
+    },
+    {
+      "id": 4,
+      "tool": "get_evaluations",
+      "arguments": {
+        "proposal_id": "P-042"
+      },
+      "ok": true,
+      "at": "2026-09-11T01:25:29.050985+00:00"
+    },
+    {
+      "id": 5,
+      "tool": "get_proposal",
+      "arguments": {
+        "proposal_id": "X-001"
+      },
+      "ok": false,
+      "at": "2026-09-11T01:26:25.298360+00:00"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": 1,
+      "proposal_id": "P-042",
+      "result": "duda",
+      "reasons": "prueba real C1.3",
+      "doubts": "ninguna",
+      "saved_at": "2026-09-11T01:25:28.834310+00:00"
+    }
+  ]
+}
